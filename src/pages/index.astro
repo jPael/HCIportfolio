@@ -10,8 +10,62 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
-		<h2>My Astro site</h2>
+	<body class="max-h-screen">
+		<main class="max-h-screen overflow-y-scroll snap-mandatory snap-y">
+			<section class="px-32 py-20 max-h-screen h-screen flex flex-1 snap-center">
+				<!-- create a div that inherits the parents height -->
+				<div
+					class="group p-10 flex flex-col justify-center gap-6 w-1/2 border-black border-4 hover:bg-black transition-colors duration-300"
+				>
+					<h1
+						class="text-[10em] leading-[.9] font-bold capitalize border-black border-b-4 group-hover:text-white group-hover:border-white"
+					>
+						no more shame
+					</h1>
+					<h3 class="text-3xl group-hover:text-white">Jason P. Pael</h3>
+				</div>
+			</section>
+			<section class="px-32 py-20 max-h-screen h-screen bg-rose-200 grid grid-cols-2 snap-center">
+				<div class="p-10">
+					<h4 class="font-semibold tracking-widest">Project Overview</h4>
+					<div class="my-16 flex flex-col justify-center">
+						<h1 class="text-[3em] font-bold capitalize">The Product</h1>
+						<p class="text-xl">
+							Insert a few sentences about the app, website, or other product that you designed and the
+							target user
+						</p>
+					</div>
+					<div class="my-16 flex flex-col justify-center">
+						<h1 class="text-[3em] font-bold capitalize">Project Duration</h1>
+						<p class="text-xl">
+							Insert the time that you worked on this design project - e.g., Month Year to Month Year
+						</p>
+					</div>
+				</div>
+				<div class="p-10">
+					<img
+						src="/"
+						alt="Preview of selected polished design"
+						class="min-h-full border-4 border-black1 bg-white/75"
+					/>
+				</div>
+			</section>
+			<section
+				class="px-32 py-20 max-h-screen h-screen bg-rose-200 grid grid-cols-2 place-items-center snap-center"
+			>
+				<!-- <div class="p-10"> -->
+				<!-- <h4 class="font-semibold tracking-widest">Project Overview</h4> -->
+
+				<div class="min-h-[30%] my-16 flex flex-col">
+					<h1 class="text-[3em] font-bold capitalize">The Problem</h1>
+					<p class="text-xl">Insert one to two sentences about the problem(s) you were trying to solve.</p>
+				</div>
+				<div class="min-h-[30%] my-16 flex flex-col">
+					<h1 class="text-[3em] font-bold capitalize">The goal</h1>
+					<p class="text-xl">Insert one to two sentences about the goal of the project.</p>
+				</div>
+				<!-- </div> -->
+			</section>
+		</main>
 	</body>
 </html>
